@@ -1,5 +1,5 @@
 {
-  "name": Up church Sermons Application Project",
+  "name": 'stirUp church Sermons Application Project",
   "private": true,
   "scripts": {
     "dev": "next dev",
