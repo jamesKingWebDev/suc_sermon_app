@@ -103,7 +103,7 @@ export default function Home() {
     <Layout title='Dashboard - Stir-Up Church Sermons'>
       <Title>Dashboard</Title>
 
-      <Heading className='mt-8'>Genre</Heading>
+      <Heading className='mt-8'>Category</Heading>
       <div className='mt-2 grid grid-cols-1 gap-4 min-[500px]:grid-cols-2 md:grid-cols-4'>
         {genre ? (
           genre
@@ -120,7 +120,7 @@ export default function Home() {
       </div>
 
       <div className='mt-10 flex items-center justify-between'>
-        <Heading className=''>Songs</Heading>
+        <Heading className=''>Sermons</Heading>
         <Link
           href={`dashboard/song`}
           className='rounded text-[15px] font-medium text-emerald-500 hover:text-emerald-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-emerald-500'
@@ -224,7 +224,7 @@ export default function Home() {
       </div>
 
       <div className='mt-10 flex items-center justify-between'>
-        <Heading className=''>Albums</Heading>
+        <Heading className=''>Series</Heading>
         <Link
           href={`dashboard/album`}
           className='rounded text-[15px] font-medium text-emerald-500 hover:text-emerald-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-emerald-500'
@@ -324,7 +324,7 @@ export default function Home() {
         )}
       </div>
 
-      <div className='mt-10 flex items-center justify-between'>
+{/*       <div className='mt-10 flex items-center justify-between'>
         <Heading className=''>Artists</Heading>
         <Link
           href={`dashboard/artist`}
@@ -361,10 +361,10 @@ export default function Home() {
             </div>
           </>
         )}
-      </div>
+      </div> */}
 
       <div className='mt-10 flex items-center justify-between'>
-        <Heading className=''>Playlists</Heading>
+        <Heading className=''>Default Playlists</Heading>
         <Link
           href={`dashboard/playlist`}
           className='rounded text-[15px] font-medium text-emerald-500 hover:text-emerald-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-emerald-500'
