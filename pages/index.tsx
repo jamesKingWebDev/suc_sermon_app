@@ -58,7 +58,7 @@ export default function Home() {
 
   if (errorGenre || errorSongs || errorAlbums || errorArtists || errorPlaylists || errorArtistByGenre) {
     return (
-      <Layout title='Dashboard - MyMusic'>
+      <Layout title='Dashboard - Stir-Up Church Sermons'>
         <div className='flex h-[36rem] items-center justify-center text-base'>Failed to load</div>
       </Layout>
     );
@@ -66,8 +66,8 @@ export default function Home() {
 
   if (query.genre) {
     return (
-      <Layout title={artistByGenre ? artistByGenre[0]?.name + ' - MyMusic' : 'Genre - MyMusic'}>
-        <Title>{artistByGenre ? artistByGenre[0]?.name : 'Genre - MyMusic'}</Title>
+      <Layout title={artistByGenre ? artistByGenre[0]?.name + ' - Stir-Up Church Sermons' : 'Genre - Stir-Up Church Sermons'}>
+        <Title>{artistByGenre ? artistByGenre[0]?.name : 'Genre - Stir-Up Church Sermons'}</Title>
         <div className='mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4'>
           {artistByGenre ? (
             artistByGenre[0]?.artists?.map((item: any, index: number) => (
@@ -100,7 +100,7 @@ export default function Home() {
   }
 
   return (
-    <Layout title='Dashboard - MyMusic'>
+    <Layout title='Dashboard - Stir-Up Church Sermons'>
       <Title>Dashboard</Title>
 
       <Heading className='mt-8'>Genre</Heading>
