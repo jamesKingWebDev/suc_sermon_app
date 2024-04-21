@@ -20,14 +20,14 @@ export default function Albums() {
 
   if (errorAlbums) {
     return (
-      <Layout title='Albums - MyMusic'>
+      <Layout title='Albums - Stir-Up Church Sermons'>
         <div className='flex h-[36rem] items-center justify-center text-base'>Failed to load</div>
       </Layout>
     );
   }
 
   return (
-    <Layout title='Albums - MyMusic' description='Browse albums - MyMusic'>
+    <Layout title='Albums - Stir-Up Church Sermons' description='Browse albums - Stir-Up Church Sermons'>
       <Title>Albums</Title>
 
       <LabeledInput
