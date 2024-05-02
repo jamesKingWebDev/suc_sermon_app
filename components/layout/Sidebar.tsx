@@ -87,7 +87,7 @@ export default function Sidebar() {
             <XIcon className='h-5 w-5 text-gray-500 transition-all hover:text-gray-700 dark:text-neutral-400 dark:hover:text-neutral-200' />
           </button>
           <p className='py-2.5 text-left text-base font-semibold tracking-wide text-neutral-800 dark:text-neutral-100'>
-            MyMusic
+            Stir Up Church Sermons
           </p>
           <div className='cursor-pointer pt-1'>
             <ThemeChanger />
@@ -140,7 +140,7 @@ export default function Sidebar() {
                 </NavLink>
 
                 <a
-                  href='https://my-music-docs.vercel.app'
+                  href='https://www.stirupchurch.com.ng'
                   className={clsx(
                     'my-1 flex w-full items-center justify-start gap-2 px-3 py-2 transition-all',
                     'rounded text-sm font-medium text-gray-600 hover:text-emerald-600 dark:text-neutral-300',
@@ -151,7 +151,7 @@ export default function Sidebar() {
                   rel='noopener noreferrer'
                 >
                   <ExternalLinkIcon className='h-4 w-4' />
-                  Docs
+                  Home
                 </a>
 
                 {/* <NavAccordion title="Design" routeName="design" icon={<TemplateIcon className="w-4 h-4" />}>
@@ -173,8 +173,8 @@ export default function Sidebar() {
                   Search
                 </NavLink>
 
-                <NavLink href='/statistics' icon={<ChartPieIcon className='h-4 w-4' />} className='mt-1'>
-                  Statistics
+                <NavLink href='/blog' icon={<ChartPieIcon className='h-4 w-4' />} className='mt-1'>
+                  Blog
                 </NavLink>
 
                 {admin.type == 'user' && (
@@ -188,7 +188,7 @@ export default function Sidebar() {
                 </NavLink>
 
                 <a
-                  href='https://my-music-docs.vercel.app'
+                  href='https://www.stirupchurch.com.ng'
                   className={clsx(
                     'mb-1 mt-1 flex w-full items-center justify-start gap-2 px-3 py-2 transition-all',
                     'rounded text-sm font-medium text-gray-600 hover:text-emerald-600 dark:text-neutral-300',
@@ -199,7 +199,7 @@ export default function Sidebar() {
                   rel='noopener noreferrer'
                 >
                   <ExternalLinkIcon className='h-4 w-4' />
-                  Docs
+                  Home
                 </a>
               </>
             )
