@@ -6,10 +6,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   switch (method) {
     case 'GET':
-      if (!query.id) {
+      //if (!query.id) {
         const { data } = await supabase.from('songs').select(`*, artists (*), album (*)`).order('id');
         res.status(200).json(data);
-      } else {
+      //} else {
         const { data } = await supabase
           .from('songs')
           .select(`*, artists (*), album (*)`)
@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         // res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
         // res.setHeader('Cache-Control', 'public, s-maxage=10, stale-while-revalidate=59');
         res.status(200).json(data);
-      }
+      //}
       break;
 
     case 'POST':
