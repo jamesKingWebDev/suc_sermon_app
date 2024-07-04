@@ -5,11 +5,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const { method, body, query } = req;
 
   switch (method) {
-    case 'GET':
-      const { data } = await supabase.from('album').select(`*, artists (*), songs (*)`);
+      case 'GET':
+    if (!query.id) {
+        const { data } = await supabase.from('artists').select(`*, genre (*), songs (*), album (*)`).order('id');
+        res.status(200).json(data);
+      } else {
+      const { data } = await supabase.from('album').select(`*, artists (*), songs (*)`).order('id');
       res.status(200).json(data);
       return res.json();
       console.log("Hello World");
+       }
       break;
 
     case 'POST':
