@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   switch (method) {
     case 'GET':
       const { data } = await supabase.from('album').select(`*, artists (*), songs (*)`).order('id');
-      res.status(200).json(data);
+      res.json(data);
       console.log("Hello World");
       break;
 
